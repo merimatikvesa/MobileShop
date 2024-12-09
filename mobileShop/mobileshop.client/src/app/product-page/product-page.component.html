@@ -1,0 +1,56 @@
+<div class="product-page">
+    <div class="product-container">
+        <div class="product-images">
+            <!-- Prva slika sa slajderom -->
+            <div class="image-container">
+                <div class="image-slider">
+                    <!-- Slider sa slikama -->
+                    <img src="../../assets/iphone11pro.avif" alt="iPhone 11 Pro" class="active">
+                    <img src="../../assets/iphone111.webp" alt="iPhone 11 Pro">
+                    <img src="../../assets/iphoone11.jpeg" alt="iPhone 11 Pro">
+                </div>
+            </div>
+
+            <!-- Dodajemo tačke za prikaz trenutnog slajda -->
+            <div class="dot-container">
+                <span class="dot" (click)="currentSlide(1)"></span>
+                <span class="dot" (click)="currentSlide(2)"></span>
+                <span class="dot" (click)="currentSlide(3)"></span>
+            </div>
+        </div>
+        <div class="product-details">
+            <!-- Specifikacije -->
+            <h2>Specifikacije:</h2>
+            <ul>
+                <li><strong>Model:</strong> iPhone 11 Pro Max</li>
+                <li><strong>Boje:</strong> Crvena, Crna, Bijela</li>
+                <li><strong>Operativni sistem:</strong> iOS 14</li>
+                <li><strong>Procesor:</strong> A13 Bionic</li>
+                <li><strong>Kapacitet baterije:</strong> 3969 mAh</li>
+                <li><strong>Ekran:</strong> Super Retina XDR OLED, 6.5 inča</li>
+                <!-- Ostale specifikacije -->
+            </ul>
+            <!-- Odabir boje -->
+            <div class="color-options">
+                <h3>Odaberi boju:</h3>
+                <div class="color-choice">
+                    <input type="radio" id="red" name="color" value="red">
+                    <label for="red" class="color red"></label>
+                </div>
+                <div class="color-choice">
+                    <input type="radio" id="black" name="color" value="black">
+                    <label for="black" class="color black"></label>
+                </div>
+                <div class="color-choice">
+                    <input type="radio" id="white" name="color" value="white">
+                    <label for="white" class="color white"></label>
+                </div>
+            </div>
+            <!-- Buttoni -->
+            <div class="buttons">
+                <button class="add-to-cart-btn">Dodaj u korpu</button>
+                <button class="add-to-favorites-btn">Dodaj u favorite</button>
+            </div>
+        </div>
+    </div>
+</div>

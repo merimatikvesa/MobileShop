@@ -1,0 +1,168 @@
+/* Resetiranje stilova */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Stilizacija glavne stranice */
+.product-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Stilizacija kontejnera proizvoda */
+.product-container {
+  padding: 60px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  width: 80%; /* Povećajte širinu kontejnera */
+  position: relative;
+}
+
+/* Stilizacija slika */
+.product-images {
+  width: 40%;
+  position: relative;
+}
+
+.image-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-slider img {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.image-slider img.active {
+  display: block;
+}
+.image-container {
+  position: relative;
+}
+
+/* Stilizacija detalja proizvoda */
+.product-details {
+  width: 45%;
+  padding-left: 20px;
+  padding-top: 30px;
+  display: flex; /* Dodajemo fleksibilni prikaz za detalje proizvoda */
+  flex-direction: column; /* Postavljamo okomito poravnanje za specifikacije */
+}
+
+.product-details h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.product-details ul {
+  list-style-type: none;
+}
+
+.product-details ul li {
+  margin-bottom: 10px;
+}
+
+.color-options {
+  margin-top: 20px;
+}
+
+.color-choice {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.color-choice input[type="radio"] {
+  display: none;
+}
+
+.color-choice label {
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.color-choice label.color {
+  width: 30px;
+  height: 30px;
+}
+
+.red {
+  background-color: rgb(28, 56, 8);
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: rgb(31, 64, 115);
+}
+
+.color-choice input[type="radio"]:checked + label {
+  border-color: #333;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.add-to-cart-btn {
+  padding: 12px 30px;
+  margin-right: 10px; /* Dodajte marginu sa desne strane */
+  border: none;
+  background-color: #FFBB64;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.add-to-favorites-btn {
+  padding: 12px 30px;
+  border: none;
+  background-color: #FFBB64;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+/* Stilizacija tački za prikaz trenutnog slajda */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.add-to-cart-btn:hover,
+.add-to-favorites-btn:hover {
+  background-color: #FFA500;
+}
